@@ -2,25 +2,43 @@
 
 namespace Unitato\Init;
 
+/**
+ * Class Article
+ *
+ * @package Unitato\Init
+ *
+ * @Entity
+ * @Table(name="article")
+ */
 class Article
 {
     /**
      * @var int
+     *
+     * @Id
+     * @GeneratedValue(strategy="AUTO")
+     * @Column(name="id", type="integer")
      */
     private $id;
 
     /**
      * @var string
+     *
+     * @Column(name="title", type="string", length=255)
      */
     private $title;
 
     /**
      * @var string
+     *
+     * @Column(name="slug", type="string", length=255)
      */
     private $slug;
 
     /**
      * @var int
+     *
+     * @Column(name="status", type="integer", length=1)
      */
     private $status;
 
