@@ -24,21 +24,21 @@ class Article
     /**
      * @var string
      *
-     * @Column(name="title", type="string", length=255)
+     * @Column(name="title", type="string", length=60)
      */
     private $title;
 
     /**
      * @var string
      *
-     * @Column(name="slug", type="string", length=255)
+     * @Column(name="slug", type="string", length=60)
      */
     private $slug;
 
     /**
      * @var int
      *
-     * @Column(name="status", type="integer", length=1)
+     * @Column(name="status", type="smallint", length=1)
      */
     private $status;
 
@@ -54,18 +54,6 @@ class Article
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * @param int $id
-     *
-     * @return Article
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
     }
 
     /**
