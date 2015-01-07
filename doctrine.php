@@ -13,6 +13,7 @@ $article
     ->setStatus(Article::STATUS_VALIDATED)
 ;
 
+
 $em->persist($article);
 
 $em->flush();
