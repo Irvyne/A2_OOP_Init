@@ -2,7 +2,7 @@
 
 
 /** @var \Doctrine\ORM\EntityManager $em */
-$em = require __DIR__.'/bootstrap.php';
+$em = require __DIR__ . '/bootstrap.php';
 
 use Unitato\Init\Article;
 
