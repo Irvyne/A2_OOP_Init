@@ -1,24 +1,17 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: irvyne
- * Date: 1/8/15
- * Time: 9:59 AM
- */
-
 
 namespace Unitato\Init;
 
 /**
  * Class User
+ *
  * @package Unitato\Init
  *
  * @Entity
- * @Table(name="user")
+ * @Table(name="unitato_user")
  */
 class User 
 {
-
     /**
      * @var  int
      *

@@ -36,6 +36,13 @@ class Article
     private $slug;
 
     /**
+     * @var User
+     *
+     * @ManyToOne(targetEntity="User")
+     */
+    private $user;
+
+    /**
      * @var int
      *
      * @Column(name="status", type="smallint", length=1)
@@ -126,6 +133,26 @@ class Article
             $this->status = $status;
         else
             throw new \Exception('Status not valid');
+
+        return $this;
+    }
+
+    /**
+     * @return User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param User $user
+     *
+     * @return Article
+     */
+    public function setUser(User $user)
+    {
+        $this->user = $user;
 
         return $this;
     }
